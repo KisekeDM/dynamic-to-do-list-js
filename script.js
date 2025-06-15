@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to Add Task
     function addTask(taskText, save = true) {
-        const trimmedTask = taskText.trim();
+        const trimmedTask = taskInput.value.trim();
         if (trimmedTask === "") {
             alert("Please enter a task!");
             return;
